@@ -4,7 +4,7 @@ import random
 random.seed("Christelle")
 
 nr_dossiers = 142
-nr_rapporteurs = 8
+nr_rapporteurs = 9
 nr_rapporteurs_par_dossier = 2
 
 nr_dossiers_par_rapporteur_base = (nr_dossiers*nr_rapporteurs_par_dossier) // nr_rapporteurs

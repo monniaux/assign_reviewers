@@ -32,10 +32,9 @@ for i in range(nr_dossiers):
         assignation[j].append(i)
         
 from openpyxl import Workbook
-wb = Workbook()
-ws_candidats = wb.active
-ws_candidats.title = "candidats"
+wb = Workbook(write_only=True)
 
+ws_candidats = wb.create_sheet("candidats")
 row=["Nom", "Prénom"]
 for j in range(nr_rapporteurs_par_dossier):
     row.append("rapport %d"%(j+1))
